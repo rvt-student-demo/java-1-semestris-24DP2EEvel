@@ -1,7 +1,15 @@
 package rvt;
 
+import java.util.Scanner;
+
 public class App {
+
     public static void main(String[] args) {
-        // Your code goes here...
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Write a message: ");
+        
+        
+        
     }
 }
