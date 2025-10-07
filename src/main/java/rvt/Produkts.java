@@ -4,17 +4,19 @@ import java.util.Scanner;
 
 public class Produkts {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    try (Scanner scanner = new Scanner(System.in)) {
 
-    String nosaukums = scanner.nextLine();
-    int skaits = scanner.nextInt();
-    double cena = scanner.nextDouble();
+      while (true) {
+        System.out.println("Input a number, 0 to quit");
+        int command = Integer.parseInt(scanner.nextLine());
+        if (command == 0) {
+          break;
+        }
 
-    double summa = skaits * cena;
+        System.out.println("You input " + command);
+      }
 
-    System.out.println(
-        "Produkts " + nosaukums + " daudzums " + skaits + " Kopeja cena: " + summa);
-
-    scanner.close();
+      System.out.println("Done, thank you!");
+    }
   }
 }
