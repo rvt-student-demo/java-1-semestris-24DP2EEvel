@@ -4,7 +4,7 @@ public class payment_card {
 
     private double balance;
 
-    public PaymentCard(double openingBalance) {
+    public payment_card(double openingBalance) {
         this.balance = openingBalance;
         System.out.println("Created card with balance: " + this.balance + " euros");
     }
